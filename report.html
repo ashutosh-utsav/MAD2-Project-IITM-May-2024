@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Activity Report</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #34495e;
+            font-size: 36px;
+            margin-bottom: 40px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+            color: #34495e;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section p {
+            margin: 10px 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .section p span {
+            display: inline-block;
+            width: 220px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .section p span.value {
+            font-weight: normal;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monthly Activity Report</h1>
+
+        <div class="section">
+            <h2>Overview</h2>
+            <p><span>Total Users:</span> <span class="value">{{ total_users }}</span></p>
+            <p><span>Total Books:</span> <span class="value">{{ total_books }}</span></p>
+            <p><span>Total Sections:</span> <span class="value">{{ total_sections }}</span></p>
+            <p><span>Total Approved Requests:</span> <span class="value">{{ total_approved_requests }}</span></p>
+            <p><span>Total Pending Requests:</span> <span class="value">{{ total_pending_requests }}</span></p>
+        </div>
+    </div>
+</body>
+</html>
