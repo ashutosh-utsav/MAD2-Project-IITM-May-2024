@@ -75,7 +75,7 @@ def daily_reminder():
 def send_notification(username):
     try:
         #this is the google chat webhook url
-        url = "https://chat.googleapis.com/v1/spaces/AAAAdkYwjc0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=DWjOxYW_rnMiY_AkdtiFR-zhlOBHlTkFT8XDPdWINm4"
+        url = "g-space url"
         app_message = {"text": f"Hello {username}! You haven't visited web library today. Please visit the app and read some Book."}
         message_headers = {"Content-Type": "application/json; charset=UTF-8"}
         http_obj = Http()
